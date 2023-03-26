@@ -14,6 +14,7 @@ body {
   flex-direction: column;
 }
 
+
 header {
   font-family: "Barlow Condensed", sans-serif;
   z-index: 1;
@@ -25,8 +26,8 @@ header {
   align-items: center;
   position: fixed;
 }
-header nav {
-  margin-right: 60px;
+header nav {  
+  margin-right: 50px;
   display: flex;
   list-style: none;
   flex-direction: row;
@@ -39,12 +40,13 @@ header a img {
   height: auto;
   width: auto;
   transition: 0.15s;
+ 
 }
 header a img:hover {
   filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
-  cursor: pointer;
+  cursor: pointer;  
 }
 header nav li {
   margin: 10px;
@@ -54,24 +56,25 @@ header nav li a {
   color: white;
   text-decoration: none;
   font-size: 20px;
-  transition: 0.15s;
+  transition: 0.15s;  
 }
 header nav li a:hover {
   color: rgba(255, 255, 255, 0.6);
-  border-bottom: 2px solid white;
+  /*border-bottom: 2px solid white;  */
 }
+
 @media (max-width: 700px) {
   header {
     flex-direction: column;
     height: 95px;
   }
   header nav {
-    margin: 0px;
+    margin: 0px;   
     margin-bottom: 15px;
     height: 30px;
   }
   header nav li {
-    margin: 8px;
+    margin: 3px;
   }
   header nav li a {
     font-size: 20px;
@@ -81,6 +84,17 @@ header nav li a:hover {
     height: auto;
   }
 }
+
+.www {
+  width: 65%;
+  height:auto;  
+}
+
+.mail {
+  width: 65%;
+  height:auto;  
+}
+
 
 /*
 	Parte principal da home
